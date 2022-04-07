@@ -345,7 +345,6 @@
 
 .testi .card {
   background-color: #f76e11;
-  max-width: 430px;
   padding: 40px 30px;
   border: none;
   border-radius: 10px;
@@ -359,5 +358,54 @@
 .testi .card .detail i {
   font-size: 50px;
   color: #fff2e5;
+}
+
+.cta .thumbnail {
+  max-width: 600px;
+  max-height: 560px;
+}
+
+@media (max-width: 1399.98px) {
+  .cta .thumbnail {
+    max-width: 580px;
+    max-height: 540px;
+  }
+}
+
+.footer {
+  background-color: #fd7e14;
+  padding-top: 60px;
+  border-radius: 50px 50px 0px 0px;
+}
+
+@media (max-width: 767.98px) {
+  .footer {
+    border-radius: 30px 30px 0px 0px;
+  }
+}
+
+.footer .row-content {
+  padding-bottom: 80px;
+}
+
+.footer .icons i {
+  font-size: 50px;
+  color: #fff;
+}
+
+.footer h3 {
+  font-weight: 700;
+  font-size: 25px;
+  margin-bottom: 30px;
+  color: #fff2e5;
+}
+
+.footer ul {
+  padding: 0;
+}
+
+.footer ul li {
+  color: #fff;
+  margin-top: 20px;
 }
 /*# sourceMappingURL=main.css.map */
