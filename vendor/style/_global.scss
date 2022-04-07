@@ -226,3 +226,30 @@
     }
   }
 }
+
+// TESTIMONI SECTION CSS
+.testi {
+  background-color: $secondary;
+  padding: 120px 0;
+
+  .card {
+    background-color: $primary;
+    max-width: 430px;
+    padding: 40px 30px;
+    border: none;
+    border-radius: 10px;
+
+    .rate {
+      i {
+        font-size: 20px;
+        color: #ebef17;
+      }
+    }
+    .detail {
+      i {
+        font-size: 50px;
+        color: $secondary;
+      }
+    }
+  }
+}
