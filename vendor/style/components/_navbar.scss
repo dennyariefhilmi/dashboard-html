@@ -24,4 +24,15 @@
       font-weight: map-get($font-weights, medium);
     }
   }
+
+  &.scrolled {
+    padding: 10px 0;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.07);
+
+    .navbar-brand {
+      img {
+        max-width: 150px;
+      }
+    }
+  }
 }
