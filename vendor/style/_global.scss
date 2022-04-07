@@ -15,6 +15,10 @@
 
 .section-margin {
   margin-top: 180px;
+
+  @include media-breakpoint-down(sm) {
+    margin-top: 130px;
+  }
 }
 
 .label-section {
@@ -36,6 +40,12 @@
   @include media-breakpoint-down(sm) {
     font-size: 25px;
   }
+  @include media-breakpoint-between(md, lg) {
+    font-size: 32px;
+  }
+}
+.subheading-section {
+  font-weight: map-get($font-weights, light);
 }
 
 // HOME SECTION CSS
@@ -192,6 +202,27 @@
           object-fit: cover;
         }
       }
+    }
+  }
+}
+
+// ABOUT SECTION CSS
+.about {
+  img {
+    max-width: 550px;
+    max-height: 550px;
+
+    @include media-breakpoint-down(xxl) {
+      max-width: 500px;
+      max-height: 500px;
+    }
+    @include media-breakpoint-between(md, lg) {
+      max-width: 400px;
+      max-height: 400px;
+    }
+    @include media-breakpoint-down(sm) {
+      max-width: 300px;
+      max-height: 300px;
     }
   }
 }
