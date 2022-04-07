@@ -102,7 +102,7 @@
   }
 }
 
-//CATEGORY START
+//CATEGORY SECTION CSS
 .category {
   i {
     font-size: 50px;
@@ -136,6 +136,60 @@
         h3,
         p {
           color: #fff;
+        }
+      }
+    }
+  }
+}
+
+// PRODUCT SECTION CSS
+.product {
+  i {
+    font-size: 50px;
+    color: $primary;
+
+    @include media-breakpoint-down(sm) {
+      font-size: 30px;
+    }
+  }
+  .card {
+    border: none;
+
+    .title-class {
+      font-weight: map-get($font-weights, medium);
+      font-size: 20px;
+    }
+    .category-name {
+      background-color: $secondary;
+    }
+    .price {
+      font-weight: map-get($font-weights, bold);
+      font-size: 25px;
+      color: $primary;
+    }
+    .rate {
+      i {
+        font-size: 30px;
+        color: #ebef17;
+        @include media-breakpoint-down(sm) {
+          font-size: 20px;
+        }
+      }
+    }
+    .thumbnail {
+      max-width: 430px;
+      max-height: 290px;
+      overflow: hidden;
+      border-radius: 10px;
+
+      .caption-img {
+        bottom: 20px;
+        left: 20px;
+      }
+      img {
+        &:hover {
+          transform: scale(1.1);
+          object-fit: cover;
         }
       }
     }

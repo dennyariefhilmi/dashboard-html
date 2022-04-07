@@ -235,4 +235,64 @@
 .category .card:hover .caption p {
   color: #fff;
 }
+
+.product i {
+  font-size: 50px;
+  color: #f76e11;
+}
+
+@media (max-width: 575.98px) {
+  .product i {
+    font-size: 30px;
+  }
+}
+
+.product .card {
+  border: none;
+}
+
+.product .card .title-class {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.product .card .category-name {
+  background-color: #fff2e5;
+}
+
+.product .card .price {
+  font-weight: 700;
+  font-size: 25px;
+  color: #f76e11;
+}
+
+.product .card .rate i {
+  font-size: 30px;
+  color: #ebef17;
+}
+
+@media (max-width: 575.98px) {
+  .product .card .rate i {
+    font-size: 20px;
+  }
+}
+
+.product .card .thumbnail {
+  max-width: 430px;
+  max-height: 290px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.product .card .thumbnail .caption-img {
+  bottom: 20px;
+  left: 20px;
+}
+
+.product .card .thumbnail img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 /*# sourceMappingURL=main.css.map */
